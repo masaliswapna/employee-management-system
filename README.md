@@ -30,7 +30,8 @@ The **Employee Management System** is a Spring Boot application designed to mana
    git clone https://github.com/masaliswapna/employee-management-system.git
    cd employee-management-system
 Configure MySQL Database
-2. Create a database named employee_management_db.
+2. **Create a database named employee_management_db**
+```bash
 Update the application.properties file with your MySQL credentials
 
 spring.datasource.url=jdbc:mysql://localhost:3306/employee_management_db
@@ -38,17 +39,17 @@ spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-3. Build the Project
+3. **Build the Project**
 mvn clean install
-4. Run the Application
+4. **Run the Application**
 mvn spring-boot:run
-API Endpoints
+## API Endpoints
 POST	:    /api/employees	--To Add a new employee
 GET	:      /api/employees	 -- To Retrieve all employees
 GET	:      /api/employees/{id}	-- To Retrieve an employee by ID
 PUT	:      /api/employees/{id}	-- To Update an employee by ID
 DELETE	:  /api/employees/{id}	-- To Delete an employee by ID
-**Testing with Postman
+##Testing with Postman
 Use Postman to test the API endpoints.
 Set the request type (GET, POST, PUT, DELETE) as per the API documentation.
 For the POST and PUT requests, ensure to send the appropriate JSON body.
